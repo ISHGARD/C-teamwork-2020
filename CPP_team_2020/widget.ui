@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Widget</class>
+ <widget class="QWidget" name="Widget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>924</width>
+    <height>581</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <widget class="QPushButton" name="pushButton_book">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>36</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>图书</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_user">
+   <property name="geometry">
+    <rect>
+     <x>111</x>
+     <y>36</y>
+     <width>93</width>
+     <height>28</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>用户</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_log" native="true">
+   <property name="geometry">
+    <rect>
+     <x>531</x>
+     <y>10</y>
+     <width>381</width>
+     <height>78</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_username">
+      <property name="text">
+       <string>Username:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="lineEdit_username"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_password">
+      <property name="text">
+       <string>Passward:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QLineEdit" name="lineEdit_password"/>
+    </item>
+    <item row="0" column="2">
+     <widget class="QCheckBox" name="checkBox_manager">
+      <property name="text">
+       <string>管理员</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="pushButton_login">
+      <property name="text">
+       <string>登录</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+   <zorder>checkBox_manager</zorder>
+   <zorder>label_username</zorder>
+   <zorder>lineEdit_username</zorder>
+   <zorder>label_password</zorder>
+   <zorder>lineEdit_password</zorder>
+   <zorder>pushButton_login</zorder>
+  </widget>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>96</y>
+     <width>901</width>
+     <height>371</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QWidget" name="widget_search" native="true">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>472</y>
+     <width>891</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QLineEdit" name="lineEdit_search"/>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_search">
+      <property name="text">
+       <string>查询</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_ID">
+      <property name="text">
+       <string>ID</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_name">
+      <property name="text">
+       <string>name</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QRadioButton" name="radioButton_type">
+      <property name="text">
+       <string>type</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton">
+      <property name="text">
+       <string>刷新</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_user" native="true">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>520</y>
+     <width>381</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton_return">
+      <property name="text">
+       <string>还书</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_borrow">
+      <property name="text">
+       <string>借书</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_manager" native="true">
+   <property name="geometry">
+    <rect>
+     <x>400</x>
+     <y>520</y>
+     <width>501</width>
+     <height>50</height>
+    </rect>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_3">
+    <item row="0" column="1">
+     <widget class="QPushButton" name="pushButton_delete">
+      <property name="text">
+       <string>删除</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="4">
+     <widget class="QPushButton" name="pushButton_cancle">
+      <property name="text">
+       <string>撤销</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="pushButton_save">
+      <property name="text">
+       <string>保存</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QPushButton" name="pushButton_insert">
+      <property name="text">
+       <string>插入</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QWidget" name="widget_logout" native="true">
+   <property name="geometry">
+    <rect>
+     <x>630</x>
+     <y>0</y>
+     <width>311</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <widget class="QLabel" name="label_wel">
+    <property name="geometry">
+     <rect>
+      <x>11</x>
+      <y>26</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>welcome!</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_logout">
+    <property name="geometry">
+     <rect>
+      <x>180</x>
+      <y>30</y>
+      <width>93</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>退出</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>widget_log</zorder>
+  <zorder>tableView</zorder>
+  <zorder>widget_user</zorder>
+  <zorder>widget_search</zorder>
+  <zorder>pushButton_book</zorder>
+  <zorder>pushButton_user</zorder>
+  <zorder>widget_manager</zorder>
+  <zorder>widget_logout</zorder>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
