@@ -25,10 +25,18 @@ DEFINES += QT_DEPRECATED_WARNINGS
 
 SOURCES += \
         main.cpp \
-        widget.cpp
+        widget.cpp \
+    sub.cpp \
+    signup.cpp
 
 HEADERS += \
-        widget.h
+        widget.h \
+    signup.h \
+    connection.h
 
 FORMS += \
-        widget.ui
+        widget.ui \
+    signup.ui
+
+RESOURCES += \
+    image.qrc

@@ -3,6 +3,8 @@
 
 #include <QWidget>
 #include <QSqlTableModel>
+#include "signup.h"
+
 namespace Ui {
 class Widget;
 }
@@ -16,6 +18,8 @@ public:
     ~Widget();
 
     int Days(int y,int m,int d);
+
+    signup rr;
 
     int difference(QString a,QString b);
 
@@ -33,9 +37,15 @@ private slots:
 
     void on_pushButton_clicked();
 
+    void on_pushButton_signup_clicked();
+
 private:
     Ui::Widget *ui;
+
     QSqlTableModel *mod;
+
+protected:
+    void paintEvent(QPaintEvent *);
 };
 
 #endif // WIDGET_H
